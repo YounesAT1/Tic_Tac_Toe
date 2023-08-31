@@ -35,11 +35,11 @@ export default function Home() {
     });
   }, [cells]);
 
-  useEffect(() => {
-    if (cells.every((cell) => cell !== "" && !whoWins)) {
-      setWhoWins("Draw !!");
-    }
-  }, [cells, whoWins]);
+useEffect(() => {
+  if (cells.every((cell) => cell !== "") && !whoWins) {
+    setWhoWins("Draw !!");
+  }
+}, [cells, whoWins]);
 
   return (
     <main className="container">
