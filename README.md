@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tic Tac Toe Game
+
+This is a simple Tic Tac Toe game built with React and Next.js. It allows two players to take turns and compete to win the game by forming a horizontal, vertical, or diagonal line of their respective symbols (X or O).
+
+## Features
+
+- Two-player mode: Play against a friend on the same device.
+- Responsive design: Enjoy the game on both desktop and mobile devices.
+- Win detection: The game automatically detects when a player has won and highlights the winning line.
+- Reset button: Start a new game at any time by clicking the "Reset" button.
+- Turn indicator: The current player's turn is indicated at the top of the board.
 
 ## Getting Started
 
-First, run the development server:
+To run the Tic Tac Toe game locally on your machine, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/YounesAT1/Tic_Tac_Toe.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   cd Tic_Tac_Toe
+   ```
 
-## Learn More
+3. Install the dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to play the game.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- To make a move, click on an empty cell on the game board.
+- Players take turns, with "X" always going first.
+- The game will automatically detect a win or a draw and display the result.
+- Click the "Reset" button to start a new game.
+
+## Project Structure
+
+The project structure is organized as follows:
+
+- `components/`: Contains React components used in the game.
+- `app/globals.css`: CSS styles for the components.
+- `pages/`: Next.js pages and routing configuration.
+- `public/`: Static assets such as images.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to your forked repository: `git push origin feature-name`.
+5. Create a pull request on the original repository.
+
+## Acknowledgments
+
+- This project was inspired by the classic Tic Tac Toe game.
+- Built with React and Next.js.
+
+Enjoy the game! If you have any questions or encounter any issues, please feel free to open an issue in the GitHub repository.
