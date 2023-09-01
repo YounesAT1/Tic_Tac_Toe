@@ -58,3 +58,13 @@
   font-weight: 600;
   margin-top: 20px;
 }
+.restart {
+  margin: 10px;
+  background-color: #e3242b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}

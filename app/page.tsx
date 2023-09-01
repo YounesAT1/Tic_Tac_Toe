@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Box from "./components/Box";
+import Button from "./components/Button";
 
 const wininngCombos = [
   [0, 1, 2],
@@ -13,7 +14,7 @@ const wininngCombos = [
   [2, 4, 6],
 ];
 
-export default function Home() {
+const Home = () => {
   const [cells, setCells] = useState(["", "", "", "", "", "", "", "", ""]);
   const [go, setGo] = useState("O");
   const [whoWins, setWhoWins] = useState("");
@@ -36,7 +37,7 @@ export default function Home() {
   }, [cells]);
 
   useEffect(() => {
-    if (cells.every((cell) => cell !== "" && !whoWins)) {
+    if (cells.every((cell) => cell !== "") && !whoWins) {
       setWhoWins("Draw !!");
     }
   }, [cells, whoWins]);
@@ -69,6 +70,19 @@ export default function Home() {
       <div className="winner" style={{ color: oWins ? "red" : "blue" }}>
         {whoWins}
       </div>
+
+      <div>
+        {whoWins && (
+          <Button
+            setCells={setCells}
+            setGo={setGo}
+            setWhoWins={setWhoWins}
+            setOWins={setOWins}
+            setXWins={setXWins}
+          />
+        )}
+      </div>
     </main>
   );
-}
+};
+export default Home;
